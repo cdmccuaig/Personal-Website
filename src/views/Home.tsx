@@ -31,11 +31,11 @@ class Home extends Component<any, IHomeState> {
           <div className="section-container">
             <Experience />
           </div>
-          {/*
+          {
           <div className="section-container">
             <Interest />
           </div>
-          */}
+          }     
           <div className="section-container">
             <Contact />
           </div>

@@ -64,16 +64,23 @@ export const contactInfo: IContactState = {
 
 //Information for Interests Section
 export const interestInfo: IInterestState = {
-  title: "What I Love To Do",
-  info: "A few of the things that make me, well, me.",
+  title: "Interests and Hobbies",
+  info: "A few things about me.",
   interestInfo: [
     {
       title: "Competitive Swimming",
-      info: `I'm on the Waterloo Varsity Swim Team and have been swimming competitively for over 7 years in both Puerto Rico and Canada. I swim Breastroke and Freestyle, but also enjoy swimming Individual Medley whenever I can. In 2014 I represented Puerto Rico internationally at the ISSF World Cup in Poland.`,
+      info: `I'm on the Waterloo Varsity Swim Team and have been swimming competitively for over 11 years. Competing as a para swimmer, I have broken 2 Canadian Para Swimming records in the 50 and 100 metre backstrokes, in the S9 class. In 2014 I represented Canada internationally at the International Children's Games.`,
+      image: swimming,
+    },
+    {
+      title: "Load-Balancing Algorithm",
+      info: `Designed and implemented a fix to the load-balancing algorithm, an algorithm which split test cases across multiple servers.
+      The algorithm was implemented using a binpacking algorithm library that is found in python. The implementation reduced nightly execution times by over 6%.`,
       image: swimming,
     },
   ],
 };
+
 
 //Information for Profile Section
 export const profileInfo: IProfileState = {
@@ -81,7 +88,7 @@ export const profileInfo: IProfileState = {
   title: "Hi, I'm Cameron",
   subtitle:
     "Computer Scientist & Competitive Swimmer.",
-  info: `I'm a young Computer Scientist just starting my career, and I am determined to learn new technologies and make a difference in the industry. As of right now, some of my interests include web development, game development and computer graphics. I'm keen on learning and love finding innovative solutions to challenging problems`,
+  info: `I'm a university student at the University of Waterloo. I love learning new technologies and working with new people. As of right now, some of my interests include web development, game development and algorithms. I'm keen on learning and love finding innovative solutions to challenging problems`,
 };
 
 //Information for Telus Job

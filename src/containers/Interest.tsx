@@ -4,11 +4,13 @@ import { IInterest, IInterestState } from "../constants/interfaces";
 import { interestInfo } from "../constants/constants";
 import { Carousel } from "react-bootstrap";
 
+
 interface IInterestCarouselState {
   index: number;
 }
 
-class Interest extends Component<IInterestState & IInterestCarouselState, any> {
+
+class Interest extends Component<any, IInterestState & IInterestCarouselState> {
   constructor(props: any) {
     super(props);
     this.state = { ...interestInfo, index: 0 };
