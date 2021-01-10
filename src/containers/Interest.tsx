@@ -56,4 +56,5 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
     });
   };
 }
+
 export default Interest;

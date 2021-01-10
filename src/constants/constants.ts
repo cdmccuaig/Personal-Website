@@ -7,6 +7,7 @@ import resume from "../assets/Contact/resume.png";
 import Resume from "../assets/Resume.pdf";
 
 //Interests Pictures
+import music from "../assets/Interests/music.jpg"
 import swimming from "../assets/Interests/swimming.jpg";
 
 //Profile Picture
@@ -59,7 +60,7 @@ export const contactInfo: IContactState = {
   ],
   title: "Let's Connect!",
   info:
-    "Reach out whenever I'm always open to talk. I'm also in a co-op program and am always looking for cool projects to work on with great people!",
+    "Reach out whenever I'm always open to talk. I'm always looking for any opportunity to work with different people and learn new technologies!",
 };
 
 //Information for Interests Section
@@ -73,10 +74,9 @@ export const interestInfo: IInterestState = {
       image: swimming,
     },
     {
-      title: "Load-Balancing Algorithm",
-      info: `Designed and implemented a fix to the load-balancing algorithm, an algorithm which split test cases across multiple servers.
-      The algorithm was implemented using a binpacking algorithm library that is found in python. The implementation reduced nightly execution times by over 6%.`,
-      image: swimming,
+      title: "Music",
+      info: `In my free time, I enjoy listening to and playing music. I have played piano in the past and I have been playing cello for over 8 years. My favourite genre of music to listen to is classic rock.`,
+      image: music,
     },
   ],
 };
