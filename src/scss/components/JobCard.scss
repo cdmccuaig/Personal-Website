@@ -48,23 +48,27 @@
     transition: all 0.8s;
 
     .job-card-title {
-      max-width: 90%;
-
       font-size: $font-size-lg;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .job-card-position {
-      max-width: 90%;
-
       font-size: $font-size-reg;
       font-weight: bold;
     }
 
     .job-card-range {
-      max-width: 90%;
-
       font-size: $font-size-sm;
+    }
+    div {
+      max-width: 100%;
+    }
+  }
+
+  .job-card-info:hover {
+    .job-card-title {
+      color: $link-colour;
     }
   }
 }
