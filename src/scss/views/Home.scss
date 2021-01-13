@@ -29,14 +29,12 @@
     z-index: -10;
 
     overflow: hidden;
-  }
+  
 
-  .app-background-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-    // filter: $blur-effect;
-    // -webkit-filter: $blur-effect;
+    .app-background-image {
+      min-height: 100vh;
+      min-width: 100vw;
+      object-fit: cover;
+    }
   }
 }
