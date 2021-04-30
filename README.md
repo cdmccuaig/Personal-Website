@@ -1,3 +1,5 @@
+The base code for this website was provided by: https://github.com/DevonMillerJunk , and he has granted me permission to use the base code. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
