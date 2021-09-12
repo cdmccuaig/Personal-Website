@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar";
 import { IJob, IJobProject } from "../constants/interfaces";
-import { telusInfo } from "../constants/constants";
+import { iS5Info } from "../constants/constants";
 import JobProjectCard from "../components/JobProjectCard";
 
-class Telus extends Component<any, IJob> {
+class iS5 extends Component<any, IJob> {
   constructor(props: any) {
     super(props);
-    this.state = telusInfo;
+    this.state = iS5Info;
   }
 
   public render() {
@@ -55,4 +55,4 @@ class Telus extends Component<any, IJob> {
   };
 }
 
-export default Telus;
+export default iS5;

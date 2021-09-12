@@ -1,6 +1,7 @@
 export enum RoutesEnum {
   HOME = "/",
   TELUS = "/telus",
+  iS5 = "/iS5"
 }
 
 export interface IMedia {

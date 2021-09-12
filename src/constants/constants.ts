@@ -19,6 +19,13 @@ import telusTransparent from "../assets/Telus/telus-transparent.png"
 import testing from "../assets/Telus/testing.png";
 import binpacking from "../assets/Telus/binpacking.png";
 
+//iS5 Job Pictures
+import iS5 from "../assets/iS5/iS5.png";
+import iS5Transparent from "../assets/iS5/iS5Transparent.png";
+import iS5Docker from "../assets/iS5/docker.png";
+import iS5Snmpsim from "../assets/iS5/snmpsim.png";
+import iS5Syslog from "../assets/iS5/syslog.png";
+
 //Necessary Types, Enums, and Interfaces
 import {
   IContactState,
@@ -128,10 +135,52 @@ export const telusInfo: IJob = {
   ],
 };
 
+export const iS5Info: IJob = {
+  title: "iS5 Communications Inc.",
+  description: `As a Software Developer in at iS5 Communications Inc., I had the opportunity to use industry standard tools such as Docker and Gitlab pipelines to re-inforce CI / CD development principles in iS5 repositories. I also had the chance to work on an snmp simulator, and got a little bit of experience working on the backend of Java based web application.`,
+  position: "Software Developer - Innovation Team",
+  dateRange: "May-August 2021",
+  logo: iS5,
+  website: `https://is5com.com/`,
+  link: RoutesEnum.iS5,
+  htmlName: "iS5",
+  navbarLogo: iS5Transparent,
+  projects: [
+    {
+      title: "SNMP Simulator",
+      info: `Dockerized an open source SNMP simulator called snmpsim, and cloned iS5 ethernet device data using
+      snmpwalk to simulate a real time iS5 Communications Inc. iES20GF ethernet switch. This simulated device can be added
+      to an instance of iS5 Communciations Inc.'s RAPTOREye (a network management system).`,
+      picture: iS5Snmpsim,
+      technologies: [
+        "Python",
+        "Docker",
+      ],
+      htmlName: "snmpsim",
+    },
+    {
+      title: "RFC 5424 Syslog Parser",
+      info: `Designed and tested an RFC 5424 Syslog parser for iS5's RAPTOREye, a network management system. Along with co-workers, 
+      the ability to receive RFC 5424 Syslog messages and properly display important messages was accomplished.`,
+      picture: iS5Syslog,
+      technologies: ["Java"],
+      htmlName: "syslog",
+    },
+    {
+      title: "Gitlab Pipelines",
+      info: `Implemented multiple gitlab pipelines to automatically build iS5 Projects whenever a code change was pushed to the Gitlab repository.
+      One of the projects was to automatically build iS5 documentation when there was a code change, as opposed to building it manually.`,
+      picture: iS5Docker,
+      technologies: ["Docker", "Gitlab Pipelines"],
+      htmlName: "docker",
+    },
+  ],
+};
+
 //Information for Experience Section
 export const experienceInfo: IExperienceState = {
   title: "My Experience",
-  jobs: [telusInfo],
+  jobs: [telusInfo, iS5Info],
 };
 
 //Information for Project Section
